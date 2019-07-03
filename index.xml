@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Memechen&#39;s blog</title>
+    <link>https://memechen.github.io/</link>
+    <description>Recent content on Memechen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>1633244077@qq.com (Fu chen)</managingEditor>
+    <webMaster>1633244077@qq.com (Fu chen)</webMaster>
+    <lastBuildDate>Wed, 03 Jul 2019 22:16:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://memechen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我拥有了我的博客</title>
+      <link>https://memechen.github.io/post/%E6%88%91%E6%8B%A5%E6%9C%89%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 03 Jul 2019 22:16:54 +0800</pubDate>
+      <author>1633244077@qq.com (Fu chen)</author>
+      <guid>https://memechen.github.io/post/%E6%88%91%E6%8B%A5%E6%9C%89%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <description>博客由来 开通博客的目的 这两天在家挺闲的，也没好好学习，在逛B站的时候看coodsheep的视频，发现了搭博客的教程，启发了自己想写博客的心情。平时没事可以随便写写文字，练习练习算法什么的，做做笔记，或者记录新学到的一些知识。本来看着视频挺短的，没想到自己一弄时间就久了，不知不觉在电脑面前坐了一天，也不知道时间晚了。主要是有些坑，自己踩进去，一时半会没出来。记录下来，以后不会犯错。
+Hugo 1.简介： Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+2.安装（windows）: 第一步：下载Windows各个版本下载
+第二步：新建Hugo文件夹，在其目录下新建子文件夹bin和子文件夹sites，并将上一步下载的文件解压到bin目录下，配置环境变量。控制台hugo -version得到反馈。
+第三步：创建站点名为test的新站点
+hugo new site test  得到如下目录结构
+. ├── archetypes ├── config.toml ├── content ├── data ├── layouts ├── static └── themes  第四步：设置主题 进入主题下载网址，选择合适主题下载
+方法一：git直接下载(例如主题名为：m10c)
+cd themes/ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  方法二：手动下载并解压到themes目录下
+第五步：部署本地，配置相关config.toml文件
+#我的配置文件 # 由于hugo是静态博客，需要自己指定博客的url，hugo会渲染进博客页面 baseurl = &amp;quot;https://memechen.github.io&amp;quot; # 设置网站默认的语言，所有的语言翻译文件在i18n目录下，文件名于此处配置的语言代码相同 languageCode = &amp;quot;en&amp;quot; defaultContentLanguage = &amp;quot;en&amp;quot; # 博客标题 title = &amp;quot;Memechen&#39;s blog&amp;quot; # 博客的样式 theme = &amp;quot;beautifulhugo&amp;quot; metaDataFormat = &amp;quot;yaml&amp;quot; pygmentsStyle = &amp;quot;trac&amp;quot; # 取消默认的代码高亮，我们使用prism代码高亮 pygmentsUseClasses = false pygmentCodeFences = true pygmentsCodefencesGuessSyntax = true #pygmentsUseClassic = true #pygmentOptions = &amp;quot;linenos=inline&amp;quot; #disqusShortname = &amp;quot;XXX&amp;quot; #googleAnalytics = &amp;quot;XXX&amp;quot; # 每页显示的文章数量用于分页 paginate = 10 [Params] #主页标题 homeTitle = &amp;quot;Memechen&#39;s blog&amp;quot; #副标题 subtitle = &amp;quot;Get busy living or get busy dying.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://memechen.github.io/about/</link>
+      <pubDate>Wed, 03 Jul 2019 18:58:21 +0800</pubDate>
+      <author>1633244077@qq.com (Fu chen)</author>
+      <guid>https://memechen.github.io/about/</guid>
+      <description> 年龄：22 坐标：北京 职业：测试/测试开发  </description>
+    </item>
+    
+  </channel>
+</rss>
