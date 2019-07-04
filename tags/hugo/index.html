@@ -10,9 +10,9 @@
   <title>Overview of all pages with the tag #Hugo - Memechen&#39;s blog</title>
   <meta property="og:title" content="Overview of all pages with the tag #Hugo" />
   <meta name="twitter:title" content="Overview of all pages with the tag #Hugo" />
-  <meta name="description" content="Overview of all pages with the tag #Hugo, such as: 我拥有了我的博客">
-  <meta property="og:description" content="Overview of all pages with the tag #Hugo, such as: 我拥有了我的博客">
-  <meta name="twitter:description" content="Overview of all pages with the tag #Hugo, such as: 我拥有了我的博客">
+  <meta name="description" content="Overview of all pages with the tag #Hugo, such as: 测试git提交博客">
+  <meta property="og:description" content="Overview of all pages with the tag #Hugo, such as: 测试git提交博客">
+  <meta name="twitter:description" content="Overview of all pages with the tag #Hugo, such as: 测试git提交博客">
   <meta name="author" content="Fu chen"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -207,6 +207,87 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://memechen.github.io/post/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2/">
+                <h2 class="post-title">测试git提交博客</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 4, 2019
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;47&nbsp;words
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fu chen
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  
+
+<h1 id="自动化部署博客脚本">自动化部署博客脚本</h1>
+
+<p>昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。
+<strong>1</strong>：在自己博客（site）文件夹下（就是有config.toml的文件夹）创<code>deploy.py</code>文件，将下面的内容粘贴进去。</p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+then msg=&quot;$1&quot;
+fi
+
+hugo -D
+
+cd public
+git add -A
+git commit -m &quot;$msg&quot;
+git push --force -u origin master
+
+cd ../
+</code></pre>
+
+<p><strong>2</strong>：给脚本文件可执行权限</p>
+
+<pre><code class="language-chmod">**3**：每次写完博客后,运行脚本就行
+</code></pre>
+
+<p>./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo;
+```</p>
+
+<p>之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）</p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://memechen.github.io/tags/%E8%84%9A%E6%9C%AC/">脚本</a>&nbsp;
+                  
+                    <a href="https://memechen.github.io/tags/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
+                  
+                    <a href="https://memechen.github.io/tags/hugo/">Hugo</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
           
             <article class="post-preview">
               <a href="https://memechen.github.io/post/%E6%88%91%E6%8B%A5%E6%9C%89%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">

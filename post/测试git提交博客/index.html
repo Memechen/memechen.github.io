@@ -10,9 +10,16 @@
   <title>测试git提交博客 - Memechen&#39;s blog</title>
   <meta property="og:title" content="测试git提交博客" />
   <meta name="twitter:title" content="测试git提交博客" />
-  <meta name="description" content=" 现在要做一件事情，就是测试git命令，观察命令行显示信息 ">
-  <meta property="og:description" content=" 现在要做一件事情，就是测试git命令，观察命令行显示信息 ">
-  <meta name="twitter:description" content=" 现在要做一件事情，就是测试git命令，观察命令行显示信息 ">
+  <meta name="description" content="自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi hugo -D cd public git add -A git commit -m &quot;$msg&quot; git push --force -u origin master cd ../  2：给脚本文件可执行权限
+**3**：每次写完博客后,运行脚本就行  ./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo; ```
+之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）">
+  <meta property="og:description" content="自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi hugo -D cd public git add -A git commit -m &quot;$msg&quot; git push --force -u origin master cd ../  2：给脚本文件可执行权限
+**3**：每次写完博客后,运行脚本就行  ./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo; ```
+之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）">
+  <meta name="twitter:description" content="自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying …">
   <meta name="author" content="Fu chen"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,13 +68,16 @@
     "name" : "Fu chen"
   },
   "headline": "测试git提交博客",
-  "description" : " 现在要做一件事情，就是测试git命令，观察命令行显示信息 ",
+  "description" : "自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi hugo -D cd public git add -A git commit -m &amp;quot;$msg&amp;quot; git push --force -u origin master cd ../  2：给脚本文件可执行权限
+**3**：每次写完博客后,运行脚本就行  ./deploy.sh &amp;ldquo;这里的话可加可不加，加了就相当于注释&amp;rdquo; ```
+之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）",
   "inLanguage" : "en",
-  "wordCount": 1,
+  "wordCount": 47,
   "datePublished" : "2019-07-04T14:38:30",
   "dateModified" : "2019-07-04T14:38:30",
   "image" : "https://memechen.github.io/img/avatar-icon.png",
-  "keywords" : [ "" ],
+  "keywords" : [ "脚本, 日记, Hugo" ],
   "mainEntityOfPage" : "https://memechen.github.io/post/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2/",
   "publisher" : {
     "@type": "Organization",
@@ -83,14 +93,18 @@
 </script>
 
 <meta property="og:title" content="测试git提交博客" />
-<meta property="og:description" content=" 现在要做一件事情，就是测试git命令，观察命令行显示信息 ">
+<meta property="og:description" content="自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi hugo -D cd public git add -A git commit -m &quot;$msg&quot; git push --force -u origin master cd ../  2：给脚本文件可执行权限
+**3**：每次写完博客后,运行脚本就行  ./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo; ```
+之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）">
 <meta property="og:image" content="https://memechen.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://memechen.github.io/post/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Memechen&#39;s blog" />
 
   <meta name="twitter:title" content="测试git提交博客" />
-  <meta name="twitter:description" content=" 现在要做一件事情，就是测试git命令，观察命令行显示信息 ">
+  <meta name="twitter:description" content="自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。 1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.py文件，将下面的内容粘贴进去。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying …">
   <meta name="twitter:image" content="https://memechen.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <link href='https://memechen.github.io/img/TRON.ico' rel='icon' type='image/x-icon'/>
@@ -250,7 +264,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;47&nbsp;words
   
   
     &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fu chen
@@ -275,9 +289,50 @@
       <article role="main" class="blog-post">
         
 
-<h2 id="现在要做一件事情-就是测试git命令-观察命令行显示信息">现在要做一件事情，就是测试git命令，观察命令行显示信息</h2>
+<h1 id="自动化部署博客脚本">自动化部署博客脚本</h1>
+
+<p>昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。
+<strong>1</strong>：在自己博客（site）文件夹下（就是有config.toml的文件夹）创<code>deploy.py</code>文件，将下面的内容粘贴进去。</p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+then msg=&quot;$1&quot;
+fi
+
+hugo -D
+
+cd public
+git add -A
+git commit -m &quot;$msg&quot;
+git push --force -u origin master
+
+cd ../
+</code></pre>
+
+<p><strong>2</strong>：给脚本文件可执行权限</p>
+
+<pre><code class="language-chmod">**3**：每次写完博客后,运行脚本就行
+</code></pre>
+
+<p>./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo;
+```</p>
+
+<p>之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）</p>
 
 
+        
+          <div class="blog-tags">
+            
+              <a href="https://memechen.github.io/tags/%E8%84%9A%E6%9C%AC/">脚本</a>&nbsp;
+            
+              <a href="https://memechen.github.io/tags/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
+            
+              <a href="https://memechen.github.io/tags/hugo/">Hugo</a>&nbsp;
+            
+          </div>
         
 
         
@@ -345,6 +400,13 @@
 
         
           
+          
+          <h4 class="see-also">See also</h4>
+          <ul>
+          
+            <li><a href="/post/%E6%88%91%E6%8B%A5%E6%9C%89%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我拥有了我的博客</a></li>
+          
+          </ul>
           
         
       </article>
