@@ -242,8 +242,9 @@
 
 <h1 id="自动化部署博客脚本">自动化部署博客脚本</h1>
 
-<p>昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。
-<strong>1</strong>：在自己博客（site）文件夹下（就是有config.toml的文件夹）创<code>deploy.py</code>文件，将下面的内容粘贴进去。</p>
+<p>昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。</p>
+
+<p><strong>1</strong>：在自己博客（site）文件夹下（就是有config.toml的文件夹）创<code>deploy.sh</code>文件，将下面的内容粘贴进去。</p>
 
 <pre><code>#!/bin/bash
 
@@ -265,7 +266,9 @@ cd ../
 
 <p><strong>2</strong>：给脚本文件可执行权限</p>
 
-<pre><code class="language-chmod">**3**：每次写完博客后,运行脚本就行
+<pre><code class="language-chmod">
+**3**：每次写完博客后,运行脚本就行
+
 </code></pre>
 
 <p>./deploy.sh &ldquo;这里的话可加可不加，加了就相当于注释&rdquo;
