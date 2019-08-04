@@ -27,16 +27,16 @@ chmod &#43;x deploy.sh  3：每次写完博客后,运行脚本就行
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "Memechen&#39;s blog",
+    "name": "Memechen\x27s blog",
     
-    "url": "https://memechen.github.io"
+    "url": "https:\/\/memechen.github.io"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https://memechen.github.io"
+  "url": "https:\/\/memechen.github.io"
   
   
   
@@ -51,14 +51,14 @@ chmod &#43;x deploy.sh  3：每次写完博客后,运行脚本就行
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://memechen.github.io",
+          "@id": "https:\/\/memechen.github.io",
           "name": "home"
         }
     },{
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://memechen.github.io/post/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2/",
+          "@id": "https:\/\/memechen.github.io\/post\/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2\/",
           "name": "测试git提交博客"
         }
     }]
@@ -71,24 +71,20 @@ chmod &#43;x deploy.sh  3：每次写完博客后,运行脚本就行
     "name" : "Fu chen"
   },
   "headline": "测试git提交博客",
-  "description" : "自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。
-1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.sh文件，将下面的内容粘贴进去。
-#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi hugo -D cd public git add -A git commit -m &amp;quot;$msg&amp;quot; git push --force -u origin master cd ../  2：给脚本文件可执行权限
-chmod &#43;x deploy.sh  3：每次写完博客后,运行脚本就行
-./deploy.sh &amp;quot;这里的话可加可不加，加了就相当于注释&amp;quot;  之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）",
+  "description" : "自动化部署博客脚本 昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。\n1：在自己博客（site）文件夹下（就是有config.toml的文件夹）创deploy.sh文件，将下面的内容粘贴进去。\n#!\/bin\/bash echo -e \x26quot;\\033[0;32mDeploying updates to GitHub...\\033[0m\x26quot; msg=\x26quot;rebuilding site `date`\x26quot; if [ $# -eq 1 ] then msg=\x26quot;$1\x26quot; fi hugo -D cd public git add -A git commit -m \x26quot;$msg\x26quot; git push --force -u origin master cd ..\/  2：给脚本文件可执行权限\nchmod \x2bx deploy.sh  3：每次写完博客后,运行脚本就行\n.\/deploy.sh \x26quot;这里的话可加可不加，加了就相当于注释\x26quot;  之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）",
   "inLanguage" : "en",
-  "wordCount": 49,
+  "wordCount":  49 ,
   "datePublished" : "2019-07-04T14:38:30",
   "dateModified" : "2019-07-04T14:38:30",
-  "image" : "https://memechen.github.io/img/avatar-icon.png",
+  "image" : "https:\/\/memechen.github.io\/img\/avatar-icon.png",
   "keywords" : [ "脚本, 日记, Hugo" ],
-  "mainEntityOfPage" : "https://memechen.github.io/post/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2/",
+  "mainEntityOfPage" : "https:\/\/memechen.github.io\/post\/%E6%B5%8B%E8%AF%95git%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https://memechen.github.io",
+    "name" : "https:\/\/memechen.github.io",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https://memechen.github.io/img/avatar-icon.png",
+        "url" : "https:\/\/memechen.github.io\/img\/avatar-icon.png",
         "height" :  60 ,
         "width" :  60
     }
@@ -121,7 +117,7 @@ chmod &#43;x deploy.sh  3：每次写完博客后,运行脚本就行
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Memechen&#39;s blog" />
 
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.55.6" />
   <link rel="alternate" href="https://memechen.github.io/index.xml" type="application/rss+xml" title="Memechen&#39;s blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://memechen.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -428,6 +424,10 @@ cd ../
             </li>
           
           
+            <li class="next">
+              <a href="https://memechen.github.io/post/vim%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E4%BA%8C%E5%88%9D%E7%BA%A7%E7%89%88%E4%BD%86%E6%98%AF%E6%8E%8C%E6%8F%A1%E4%BA%86%E4%BC%9A%E5%BE%88%E5%8E%89%E5%AE%B3/" data-toggle="tooltip" data-placement="top" title="Vim命令大全(二)(初级版但是掌握了会很厉害)">Next Post &rarr;</a>
+            </li>
+          
         </ul>
       
 
@@ -501,7 +501,7 @@ cd ../
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.54.0</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.55.6</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>
