@@ -5,7 +5,7 @@
     <link>https://memechen.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
     <description>Recent content in 随笔 on Memechen&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-CN</language>
     <managingEditor>1633244077@qq.com (Fu chen)</managingEditor>
     <webMaster>1633244077@qq.com (Fu chen)</webMaster>
     <lastBuildDate>Sun, 04 Aug 2019 12:38:18 +0800</lastBuildDate>
@@ -38,12 +38,12 @@ Hugo 1.简介： Hugo是由Go语言实现的静态网站生成器。简单、易
 2.安装（windows）: 第一步：下载Windows各个版本下载
 第二步：新建Hugo文件夹，在其目录下新建子文件夹bin和子文件夹sites，并将上一步下载的文件解压到bin目录下，配置环境变量。控制台hugo -version得到反馈。
 第三步：创建站点名为test的新站点
-hugo new site test  得到如下目录结构
-. ├── archetypes ├── config.toml ├── content ├── data ├── layouts ├── static └── themes  第四步：设置主题 进入主题下载网址，选择合适主题下载
+hugo new site test 得到如下目录结构
+. ├── archetypes ├── config.toml ├── content ├── data ├── layouts ├── static └── themes 第四步：设置主题 进入主题下载网址，选择合适主题下载
 方法一：git直接下载(例如主题名为：m10c)
-cd themes/ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  方法二：手动下载并解压到themes目录下
+cd themes/ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 方法二：手动下载并解压到themes目录下
 第五步：部署本地，配置相关config.toml文件
-#我的配置文件 # 由于hugo是静态博客，需要自己指定博客的url，hugo会渲染进博客页面 baseurl = &amp;quot;https://memechen.github.io&amp;quot; # 设置网站默认的语言，所有的语言翻译文件在i18n目录下，文件名于此处配置的语言代码相同 languageCode = &amp;quot;en&amp;quot; defaultContentLanguage = &amp;quot;en&amp;quot; # 博客标题 title = &amp;quot;Memechen&#39;s blog&amp;quot; # 博客的样式 theme = &amp;quot;beautifulhugo&amp;quot; metaDataFormat = &amp;quot;yaml&amp;quot; pygmentsStyle = &amp;quot;trac&amp;quot; # 取消默认的代码高亮，我们使用prism代码高亮 pygmentsUseClasses = false pygmentCodeFences = true pygmentsCodefencesGuessSyntax = true #pygmentsUseClassic = true #pygmentOptions = &amp;quot;linenos=inline&amp;quot; #disqusShortname = &amp;quot;XXX&amp;quot; #googleAnalytics = &amp;quot;XXX&amp;quot; # 每页显示的文章数量用于分页 paginate = 10 [Params] #主页标题 homeTitle = &amp;quot;Memechen&#39;s blog&amp;quot; #副标题 subtitle = &amp;quot;Get busy living or get busy dying.</description>
+#我的配置文件 # 由于hugo是静态博客，需要自己指定博客的url，hugo会渲染进博客页面 baseurl = &amp;#34;https://memechen.github.io&amp;#34; # 设置网站默认的语言，所有的语言翻译文件在i18n目录下，文件名于此处配置的语言代码相同 languageCode = &amp;#34;en&amp;#34; defaultContentLanguage = &amp;#34;en&amp;#34; # 博客标题 title = &amp;#34;Memechen&amp;#39;s blog&amp;#34; # 博客的样式 theme = &amp;#34;beautifulhugo&amp;#34; metaDataFormat = &amp;#34;yaml&amp;#34; pygmentsStyle = &amp;#34;trac&amp;#34; # 取消默认的代码高亮，我们使用prism代码高亮 pygmentsUseClasses = false pygmentCodeFences = true pygmentsCodefencesGuessSyntax = true #pygmentsUseClassic = true #pygmentOptions = &amp;#34;linenos=inline&amp;#34; #disqusShortname = &amp;#34;XXX&amp;#34; #googleAnalytics = &amp;#34;XXX&amp;#34; # 每页显示的文章数量用于分页 paginate = 10 [Params] #主页标题 homeTitle = &amp;#34;Memechen&amp;#39;s blog&amp;#34; #副标题 subtitle = &amp;#34;Get busy living or get busy dying.</description>
     </item>
     
   </channel>

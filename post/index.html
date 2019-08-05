@@ -191,7 +191,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 4, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019, August 4
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
@@ -233,7 +233,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 4, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019, August 4
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -286,7 +286,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 4, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019, July 4
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -311,35 +311,26 @@
 <p>昨天刚装好博客，今天写博客部署到github发现命令非常多，如果每次都要敲这么多命令不得烦死，刚好看到有自动化脚本，自己动手实验过之后，索性将脚本记录在这里。</p>
 
 <p><strong>1</strong>：在自己博客（site）文件夹下（就是有config.toml的文件夹）创<code>deploy.sh</code>文件，将下面的内容粘贴进去。</p>
-
-<pre><code>#!/bin/bash
-
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
-msg=&quot;rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-then msg=&quot;$1&quot;
-fi
+<div class="highlight"><pre class="chroma"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+<span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
 
 hugo -D
 
-cd public
+<span class="nb">cd</span> public
 git add -A
-git commit -m &quot;$msg&quot;
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
 git push --force -u origin master
 
-cd ../
-</code></pre>
-
+<span class="nb">cd</span> ../</pre></div>
 <p><strong>2</strong>：给脚本文件可执行权限</p>
-
-<pre><code>chmod +x deploy.sh
-</code></pre>
-
+<div class="highlight"><pre class="chroma">chmod +x deploy.sh</pre></div>
 <p><strong>3</strong>：每次写完博客后,运行脚本就行</p>
-
-<pre><code>./deploy.sh &quot;这里的话可加可不加，加了就相当于注释&quot;
-</code></pre>
-
+<div class="highlight"><pre class="chroma">./deploy.sh &#34;这里的话可加可不加，加了就相当于注释&#34;</pre></div>
 <p>之后，你的博文已经发布在你的个人博客了。（可能会有一点点延迟）</p>
 
                 
@@ -370,7 +361,7 @@ cd ../
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 3, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019, July 3
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
@@ -393,12 +384,12 @@ Hugo 1.简介： Hugo是由Go语言实现的静态网站生成器。简单、易
 2.安装（windows）: 第一步：下载Windows各个版本下载
 第二步：新建Hugo文件夹，在其目录下新建子文件夹bin和子文件夹sites，并将上一步下载的文件解压到bin目录下，配置环境变量。控制台hugo -version得到反馈。
 第三步：创建站点名为test的新站点
-hugo new site test  得到如下目录结构
-. ├── archetypes ├── config.toml ├── content ├── data ├── layouts ├── static └── themes  第四步：设置主题 进入主题下载网址，选择合适主题下载
+hugo new site test 得到如下目录结构
+. ├── archetypes ├── config.toml ├── content ├── data ├── layouts ├── static └── themes 第四步：设置主题 进入主题下载网址，选择合适主题下载
 方法一：git直接下载(例如主题名为：m10c)
-cd themes/ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  方法二：手动下载并解压到themes目录下
+cd themes/ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 方法二：手动下载并解压到themes目录下
 第五步：部署本地，配置相关config.toml文件
-#我的配置文件 # 由于hugo是静态博客，需要自己指定博客的url，hugo会渲染进博客页面 baseurl = &quot;https://memechen.github.io&quot; # 设置网站默认的语言，所有的语言翻译文件在i18n目录下，文件名于此处配置的语言代码相同 languageCode = &quot;en&quot; defaultContentLanguage = &quot;en&quot; # 博客标题 title = &quot;Memechen's blog&quot; # 博客的样式 theme = &quot;beautifulhugo&quot; metaDataFormat = &quot;yaml&quot; pygmentsStyle = &quot;trac&quot; # 取消默认的代码高亮，我们使用prism代码高亮 pygmentsUseClasses = false pygmentCodeFences = true pygmentsCodefencesGuessSyntax = true #pygmentsUseClassic = true #pygmentOptions = &quot;linenos=inline&quot; #disqusShortname = &quot;XXX&quot; #googleAnalytics = &quot;XXX&quot; # 每页显示的文章数量用于分页 paginate = 10 [Params] #主页标题 homeTitle = &quot;Memechen's blog&quot; #副标题 subtitle = &quot;Get busy living or get busy dying.
+#我的配置文件 # 由于hugo是静态博客，需要自己指定博客的url，hugo会渲染进博客页面 baseurl = &#34;https://memechen.github.io&#34; # 设置网站默认的语言，所有的语言翻译文件在i18n目录下，文件名于此处配置的语言代码相同 languageCode = &#34;en&#34; defaultContentLanguage = &#34;en&#34; # 博客标题 title = &#34;Memechen&#39;s blog&#34; # 博客的样式 theme = &#34;beautifulhugo&#34; metaDataFormat = &#34;yaml&#34; pygmentsStyle = &#34;trac&#34; # 取消默认的代码高亮，我们使用prism代码高亮 pygmentsUseClasses = false pygmentCodeFences = true pygmentsCodefencesGuessSyntax = true #pygmentsUseClassic = true #pygmentOptions = &#34;linenos=inline&#34; #disqusShortname = &#34;XXX&#34; #googleAnalytics = &#34;XXX&#34; # 每页显示的文章数量用于分页 paginate = 10 [Params] #主页标题 homeTitle = &#34;Memechen&#39;s blog&#34; #副标题 subtitle = &#34;Get busy living or get busy dying.
                   <a href="https://memechen.github.io/post/%E6%88%91%E6%8B%A5%E6%9C%89%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="post-read-more">[Read More]</a>
                 
               </div>
